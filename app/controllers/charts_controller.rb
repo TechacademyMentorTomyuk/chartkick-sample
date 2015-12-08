@@ -6,8 +6,6 @@ class ChartsController < ApplicationController
   STEP_UNIT = 10
 
   def index
-    
-    
     @data1 = []  # 配列の場合
     @data2 = {}  # Hashの場合(User.order('group_id ASC).group(:group_id).count) 等
     @data3 = {}
@@ -18,6 +16,5 @@ class ChartsController < ApplicationController
       @data2[t] = Math.sin(r*2)
       @data3[t] = Math.cos(r)
     }
-    pp @data1
   end
 end
