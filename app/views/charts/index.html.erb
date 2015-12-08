@@ -1,0 +1,12 @@
+<h1>Sample of the Sin/Cos chart</h1>
+<div>
+
+  <div class="chart">
+    <%= line_chart [
+          {name: "Sin", data: @data1},
+          {name: "Sin*2", data: @data2},
+          {name: "Cos", data: @data3}
+        ], colors: ["pink", "blue", "green"] %>
+  </div>
+
+</div>
